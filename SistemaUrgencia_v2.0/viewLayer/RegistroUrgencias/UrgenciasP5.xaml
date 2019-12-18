@@ -1,0 +1,106 @@
+﻿<Page x:Class="SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias.UrgenciasP5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UrgenciasP5" Width="1324.227" Height="642.64">
+
+
+
+    <StackPanel Background="White" VerticalAlignment="Stretch">
+        <Canvas Height="8" Margin="52,30,60,0" Background="#21CCEF" Opacity="0.73"/>
+        
+        <TextBlock TextWrapping="Wrap" Margin="140,20,630,0" Height="67" FontSize="50" FontFamily="Arial Rounded MT" Foreground="#5FC2FB" ><Bold><Run Text="Datos Del Paciente"/></Bold></TextBlock>
+        <Image Height="68" Margin="28,-80,0,0" Source="/SistemaUrgencia_v2.0;component/Image1.png" Stretch="Fill" HorizontalAlignment="Left" Width="94"/>
+        <Canvas Height="8" Margin="52,0,60,0" Background="#21CCEF" Opacity="0.73"/>
+        <TextBlock Margin="80,10,736,0" FontFamily="Roboto" FontSize="30" FontWeight="Regular" Foreground="#060610">Por favor llene el sigiente formulario:</TextBlock>
+
+        <!--Datos personales-->
+
+        <!--<TextBlock Margin="109,10,1114,0" FontFamily="Roboto" FontSize="20" FontWeight="Regular" Foreground="#060610" >N° Historial:</TextBlock>
+        <TextBox Height="22" TextWrapping="Wrap" Text="TextBox" Margin="222,-24,941,0"/>-->
+        <Label FontFamily="Roboto" FontSize="25" Margin="160,20,855,0">Tratamiento Farmacologico</Label>
+        <!--Datos previos-->
+        <Label Margin="129,0,1106,0" FontFamily="Roboto" FontSize="20">Via Oral</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt1">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="75,0,1106,0" FontFamily="Roboto" FontSize="20">Via Sublingual</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt2">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="56,0,1106,0" FontFamily="Roboto" FontSize="20">Via transdermica</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt3">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="117,0,1101,0" FontFamily="Roboto" FontSize="20">Via topica</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt4">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="127,0,1103,0" FontFamily="Roboto" FontSize="20">Via otica</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt5">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="109,0,1106,0" FontFamily="Roboto" FontSize="20">Via vaginal</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="223,-35,1029,0" x:Name="txt6">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="400,-385,799,0" FontFamily="Roboto" FontSize="20" Height="34">Via oftalmica</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="529,-380,723,0" Height="36" x:Name="txt7">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="386,-320,799,0" FontFamily="Roboto" FontSize="20" Height="34">Via inhalatoria</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="529,-310,723,0" Height="36" x:Name="txt8">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="441,-245,799,0" FontFamily="Roboto" FontSize="20" Height="34">Via recta</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="529,-240,723,0" Height="36" x:Name="txt9">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="396,-175,800,0" FontFamily="Roboto" FontSize="20" Height="34">Via intranasal</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="529,-170,723,0" Height="36" x:Name="txt10">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="392,-105,801,0" FontFamily="Roboto" FontSize="20" Height="34">Via parenteral</Label>
+        <ComboBox FontFamily="Roboto" FontSize="20" Margin="529,-100,723,0" Height="36" x:Name="txt11">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+
+
+
+
+
+        <TextBlock FontFamily="Roboto" FontSize="25" Margin="248,40,736,0">Descripcion de la prescripcion</TextBlock>
+        <TextBox Margin="338,20,496,0" x:Name="txtprescripcion"></TextBox>
+
+        <Button Margin="920,-50,276,0" Height="28"  Click="Guardar">Guardar</Button>
+
+
+        <!--boton atras-->
+
+        <Label Margin="52,-140,1156,0" Height="34" FontFamily="Roboto" FontSize="20">Atras</Label>
+        <Button Height="52" Margin="50,-52,1156,0" Background="White" Click="atras4">
+            <Image Source="/SistemaUrgencia_v2.0;component/Img/flecha.gif" RenderTransformOrigin="0.5,0.5" Width="88" Height="39">
+
+            </Image>
+        </Button>
+        <Button Content="1" Click="b1" Margin="1083,-55,202,0"/>
+        <Button Content="2" Click="b2" Margin="1133,-55,152,0"/>
+        <Button Content="3" Click="b3" Margin="1183,-55,102,0"/>
+        <Button Content="4" Click="b4" Margin="1233,-55,52,0"/>
+    </StackPanel>
+</Page>

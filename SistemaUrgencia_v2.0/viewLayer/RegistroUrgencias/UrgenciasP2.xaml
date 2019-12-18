@@ -1,0 +1,186 @@
+﻿<Page x:Class="SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias.UrgenciasP2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias"
+      mc:Ignorable="d"
+      Title="UrgenciasP2" Width="1324.227" Height="883.64">
+
+
+    <StackPanel Background="White" VerticalAlignment="Stretch" Margin="0,0,0,-24">
+        <Canvas Height="8" Margin="52,30,60,0" Background="#21CCEF" Opacity="0.73"/>
+
+        <TextBlock TextWrapping="Wrap" Margin="140,20,630,0" Height="67" FontSize="50" FontFamily="Arial Rounded MT" Foreground="#5FC2FB" ><Bold><Run Text="Datos Del Paciente"/></Bold></TextBlock>
+        <Image Height="77" Margin="28,-80,0,0" Source="/SistemaUrgencia_v2.0;component/Image1.png" Stretch="Fill" HorizontalAlignment="Left" Width="94"/>
+        <Canvas Height="8" Margin="52,0,60,0" Background="#21CCEF" Opacity="0.73"/>
+        <TextBlock Margin="80,0,732,0" FontFamily="Roboto" FontSize="30" FontWeight="Regular" Foreground="#060610" >Por favor llene el sigiente formulario:</TextBlock>
+
+        <!--Datos personales-->
+
+        <TextBlock Margin="109,10,1114,0" FontFamily="Roboto" FontSize="20" FontWeight="Regular" Foreground="#060610" >N° Historial:</TextBlock>
+        <TextBox Height="36" TextWrapping="Wrap"  Margin="222,-44,906,0"/>
+
+        <!--Datos previos-->
+
+        <TextBlock Margin="80,20,1048,0" FontFamily="Roboto" FontSize="25" FontWeight="Regular" Foreground="#060610" >valoracion inicial:</TextBlock>
+
+        <TextBlock Margin="155,10,1114,0" FontFamily="Roboto" FontSize="18" FontWeight="Regular" Foreground="#060610" >Dolor:</TextBlock>
+        <ComboBox  Margin="222,-24,976,0" x:Name="txtDolor">
+            <ComboBoxItem IsSelected="True">Agudo</ComboBoxItem>
+            <ComboBoxItem>Cronico</ComboBoxItem>
+            <ComboBoxItem>Emocional</ComboBoxItem>
+            <ComboBoxItem>Psicologico</ComboBoxItem>
+            <ComboBoxItem>Neuropatico</ComboBoxItem>
+            <ComboBoxItem>Nociceptivo</ComboBoxItem>
+            <ComboBoxItem>Psicogeno</ComboBoxItem>
+            <ComboBoxItem>Somatico</ComboBoxItem>
+            <ComboBoxItem>Visceral</ComboBoxItem>
+            <ComboBoxItem>Leve</ComboBoxItem>
+            <ComboBoxItem>Moderado</ComboBoxItem>
+            <ComboBoxItem>Severo</ComboBoxItem>
+        </ComboBox>
+
+        <TextBlock Margin="389,-25,860,0" Height="30" FontSize="18" FontFamily="Roboto">Tipo:</TextBlock>
+        <TextBox Margin ="469,-50,630,0" Height="36" x:Name="txtTipo"></TextBox>
+
+        <TextBlock Margin="746,-30,519,0" Height="30" FontSize="18" FontFamily="Roboto">Lugar:</TextBlock>
+        <TextBox Margin ="810,-50,284,0" Height="36" x:Name="txtLugar"></TextBox>
+
+        <TextBlock Margin="625,50,624,0" Height="30" FontSize="18" FontFamily="Roboto">Alergias:</TextBlock>
+        <TextBox Margin="705,-50,207,0" Height="36" x:Name="txtAlergias"></TextBox>
+
+        <Grid Height="326" Margin="150,0,914,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="161*"/>
+                <ColumnDefinition Width="99*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--titulos del Grid-->
+            <Label Grid.Column="0" Grid.Row="0" FontSize="15" Content="Necesidad" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="1" Grid.Row="0" FontSize="15" Content="Habilitar" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <!--tipos de necesidades-->
+            <Label Grid.Column="0" Grid.Row="1" FontSize="15" Content="Respiracion" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="2" FontSize="15" Content="Hidratacion" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="3" FontSize="15" Content="Conciencia" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="4" FontSize="15" Content="Seguridad" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="5" FontSize="15" Content="Sensorial" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="6" FontSize="15" Content="Eliminacion" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="7" FontSize="15" Content="Movilidad" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="8" FontSize="15" Content="comunicacion" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <!--radioButon normal-alterada-->
+
+            <!--Respiracion-->
+            <Label Grid.Column="1" Grid.Row="1" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="39" x:Name="txtRespiracion">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+
+            <!--Respiracion-->
+            <!--Hidratacion-->
+            <Label Grid.Column="1" Grid.Row="2" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="38" x:Name="txthidratacion">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Conciencia-->
+            <Label Grid.Column="1" Grid.Row="3" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="38" x:Name="txtconciencia">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Seguridad-->
+            <Label Grid.Column="1" Grid.Row="4" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="37" x:Name="txtseguridad">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Sensorial-->
+            <Label Grid.Column="1" Grid.Row="5" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="37" x:Name="txtsensorial">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Eliminacion-->
+            <Label Grid.Column="1" Grid.Row="6" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="37" x:Name="txtEliminacion">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Movilidad-->
+            <Label Grid.Column="1" Grid.Row="7" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="32" x:Name="txtmovilidad">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--Comunicacion-->
+            <Label Grid.Column="1" Grid.Row="8" FontSize="15" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                <ComboBox Width="68" Height="37" x:Name="txtcomunicacion">
+                    <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+                    <ComboBoxItem>Si</ComboBoxItem>
+                </ComboBox>
+            </Label>
+            <!--ayuda-->
+        </Grid>
+        <Label Margin="150,0,1024,0" FontSize="18" FontFamily="Roboto">Tipo de Ayuda:</Label>
+        <TextBox Margin="276,-0,548,0" Height="36" x:Name="txtAyudaNecesidad"></TextBox>
+
+        <TextBlock Margin="626,-600,499,0" FontSize="18" Height="24" FontFamily="Roboto">Otros signos y síntomas:</TextBlock>
+        <TextBox Margin="837,-620,178,0" Height="36" x:Name="txtSigSintomas"/>
+
+        <TextBlock Margin="625,-480,479,0" FontSize="18" Height="28" FontFamily="Roboto">Necesidad de ayuda social:</TextBlock>
+        <ComboBox  Margin="879,-485,241,0" FontSize="18" FontFamily="Roboto" Height="36" x:Name="txtAyudasocial">
+            <ComboBoxItem IsSelected="True">Ninguno</ComboBoxItem>
+            <ComboBoxItem>pobreza energética</ComboBoxItem>
+            <ComboBoxItem>emergencia social</ComboBoxItem>
+            <ComboBoxItem>vivienda</ComboBoxItem>
+            <ComboBoxItem>alimentación</ComboBoxItem>
+        </ComboBox>
+
+        <Button Height="52" Margin="1156,30,50,0" Background="White" Click="Siguiente2">
+            <Image Source="/SistemaUrgencia_v2.0;component/Img/flecha.gif" RenderTransformOrigin="0.5,0.5" Width="88" Height="39">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.00"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--boton atras-->
+
+        <Button Height="52" Margin="50,-55,1156,0" Background="White" Click="atras1">
+            <Image Source="/SistemaUrgencia_v2.0;component/Img/flecha.gif" RenderTransformOrigin="0.5,0.5" Width="88" Height="39">
+
+            </Image>
+        </Button>
+        <Button Margin="716,-55,480,0"  Foreground="White" Height="28" Click="Guardar">
+            Guardar
+        </Button>
+        <Button Content="1" Click="bt_1" Margin="921,-55,364,0"/>
+        <Button Content="3" Click="bt_3" Margin="973,-55,312,0"/>
+        <Button Content="4" Click="bt_4" Margin="1021,-55,264,0"/>
+        <Button Content="5" Click="bt_5" Margin="1071,-55,214,0"/>
+    </StackPanel>
+
+</Page>

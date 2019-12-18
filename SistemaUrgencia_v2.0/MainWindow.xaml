@@ -1,0 +1,19 @@
+﻿<Window x:Class="SistemaUrgencia_v2._0.page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaUrgencia_v2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" Width="1358.5" Height="739.833">
+    <Grid Background="#5FC2FB">
+        <Button Content="Urgencias"  Click="Bt_urgencias" FontWeight="Light" Margin="48,27,1148,631" Background="#0A418A" BorderBrush="#5FC2FB"/>
+        <Button Content="Lis. Urgencias"  Click="Bt_Listas" FontWeight="Light" Margin="238,36,958,641" Background="#0A418A" BorderBrush="#5FC2FB"/>
+        <Button Content="Lis. soliciutud analisis"  Click="Bt_Listas2" FontWeight="Light" Margin="421,36,775,641" Background="#0A418A" BorderBrush="#5FC2FB"/>
+        <Button Content="Lis. solicitud radiogr."  Click="Bt_Listas3" FontWeight="Light" Margin="605,36,591,641" Background="#0A418A" BorderBrush="#5FC2FB"/>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" Margin="0,116,0,10">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden" BorderBrush="Black" BorderThickness="0.5"  Height="882" Width="1326" Background="White"/>
+        </ScrollViewer>
+    </Grid>
+</Window> 

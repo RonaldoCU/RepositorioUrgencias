@@ -1,0 +1,38 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaUrgencia_v2._0.viewLayer.ListaUrgencias"
+      xmlns:_0="clr-namespace:SistemaUrgencia_v2._0" x:Class="SistemaUrgencia_v2._0.viewLayer.ListaUrgencias.listaSolicitudRadio"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="listaSolicitudRadio" Width="1324.227" Height="642.64">
+
+    <Page.Resources>
+        <_0:UrgSqlServerDataSet x:Key="UrgSqlServerDataSet"/>
+        <CollectionViewSource x:Key="imagenesViewSource" Source="{Binding Imagenes, Source={StaticResource UrgSqlServerDataSet}}"/>
+    </Page.Resources>
+
+    <StackPanel Background="White" Width="1324" VerticalAlignment="Stretch" DataContext="{StaticResource imagenesViewSource}">
+        <Canvas Height="8" Margin="52,30,60,0" Background="#21CCEF" Opacity="0.73"/>
+        <Button Margin="1134,30,63,0"   Foreground="White" Background="#FFD4252B" Height="28" Content="Eliminar" Click="bt_eliminar"/>
+
+        <TextBlock TextWrapping="Wrap" Margin="140,-55,467,0" Height="67" FontSize="50" FontFamily="Arial Rounded MT" Foreground="#5FC2FB"><Bold><Run Text="Listas de solicitud Radigrafia"/></Bold></TextBlock>
+        <Image Height="56" Margin="28,-80,0,0" Source="/SistemaUrgencia_v2.0;component/Image1.png" Stretch="Fill" HorizontalAlignment="Left" Width="71"/>
+        <Canvas Height="8" Margin="52,0,60,0" Background="#21CCEF" Opacity="0.73"/>
+        <TextBlock Margin="80,0,1001,0" FontFamily="Roboto" FontSize="30" FontWeight="Regular" Foreground="#060610" ><Run Text="Solicitud:"/></TextBlock>
+        <DataGrid ItemsSource="{Binding}" AutoGenerateColumns="True" Name="data1" Height="456" Margin="52,0,449,0"/>
+        <Grid x:Name="grid1" Margin="929,-540,198,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="id imagen:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="id_imagenTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding id_imagen, Mode=OneWay}" VerticalAlignment="Center" Width="120"/>
+        </Grid>
+    </StackPanel>
+</Page>

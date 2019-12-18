@@ -1,0 +1,14 @@
+﻿<Page x:Class="SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias.bt_vistas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias"
+      mc:Ignorable="d"
+      Title="bt_vistas" Height="69.5" Width="237.5">
+
+    <Grid Background="#5FC2FB" Margin="0,0,-12,0">
+
+        <Button Content="Urgencias" FontWeight="Light" FontFamily="Roboto" FontSize="50" Foreground="White" Height="Auto" Background="#5FC2FB" BorderBrush="#5FC2FB"/>
+    </Grid>
+</Page>

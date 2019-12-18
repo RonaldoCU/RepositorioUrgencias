@@ -1,0 +1,140 @@
+﻿<Page x:Class="SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias.UrgenciasP4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SistemaUrgencia_v2._0.viewLayer.RegistroUrgencias"
+      mc:Ignorable="d"
+      Title="UrgenciasP4" Width="1324.227" Height="771.79">
+
+    <StackPanel Background="White" VerticalAlignment="Stretch">
+        <Canvas Height="8" Margin="52,30,60,0" Background="#21CCEF" Opacity="0.73"/>
+        
+        <TextBlock TextWrapping="Wrap" Margin="140,20,630,0" Height="67" FontSize="50" FontFamily="Arial Rounded MT" Foreground="#5FC2FB" ><Bold><Run Text="Datos Del Paciente"/></Bold></TextBlock>
+        <Image Height="80" Margin="37,-80,0,0" Source="/SistemaUrgencia_v2.0;component/Image1.png" Stretch="Fill" HorizontalAlignment="Left" Width="94"/>
+        <Canvas Height="8" Margin="52,0,60,0" Background="#21CCEF" Opacity="0.73"/>
+        <Label FontSize="30" FontFamily="Roboto" Margin="52,0,780,0">Solicitudes :</Label>
+        <Label FontSize="25" Margin="59,0,1059,0" FontFamily="Roboto">Datos asistente:</Label>
+        <Label FontSize="20" Margin="123,0,1118,0" FontFamily="Roboto">Codigo:</Label>
+        <TextBox Margin="206,-30,892,0" Height="24" x:Name="txtcodigo"></TextBox>
+        <Label FontSize="20" Margin="114,0,1118,0" FontFamily="Roboto">Nombre:</Label>
+        <TextBox Margin="206,-30,892,0" Height="24" x:Name="txtnombre"></TextBox>
+        <Label FontSize="20" Margin="133,0,1123,0" FontFamily="Roboto">Cargo:</Label>
+        <TextBox Margin="206,-30,892,0" Height="24" x:Name="txtcargo"></TextBox>
+        <Label FontSize="20" Margin="35,0,1019,0" FontFamily="Roboto">Nivel de solicitud ANALISIS:</Label>
+        <ComboBox Margin="310,-30,955,0" x:Name="txtnivelA">
+            <ComboBoxItem IsSelected="True">Nivel 1</ComboBoxItem>
+            <ComboBoxItem>Nivel 2</ComboBoxItem>
+            <ComboBoxItem>Nivel 3</ComboBoxItem>
+            <ComboBoxItem>Nivel 4</ComboBoxItem>
+            <ComboBoxItem>Nivel 5</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="74,20,1156,0" FontSize="20" FontFamily="Roboto">Petición:</Label>
+        <Label Margin="52,0,1183,0" FontSize="20" FontFamily="Roboto">Sangre</Label>
+        <ComboBox Margin="146,-35,1096,0" FontSize="20" FontFamily="Roboto" x:Name="txtsangre">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="56,0,1183,0">Heces</Label>
+        <ComboBox Margin="146,-35,1096,0" FontSize="20" FontFamily="Roboto" x:Name="txtheces">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="56,0,1183,0">Orina</Label>
+        <ComboBox Margin="146,-35,1096,0" FontSize="20" FontFamily="Roboto" x:Name="txtorina">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+
+        <Label FontFamily="Roboto" FontSize="20" Margin="266,-170,981,0" Height="30">Precion</Label>
+        <ComboBox Margin="356,-175,878,0" FontSize="20" FontFamily="Roboto" x:Name="txtprecion">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="260,-100,982,0" Height="34">Quimica</Label>
+        <ComboBox Margin="356,-100,878,0" FontSize="20" FontFamily="Roboto" x:Name="txtinmumologia">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="256,-35,973,0">Solicitud</Label>
+        <ComboBox Margin="356,-33,878,0" FontSize="20" FontFamily="Roboto" x:Name="txtquimica">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+
+        <Label FontSize="24" FontFamily="Roboto" Margin="56,0,1146,0">Solicitud:</Label>
+        <TextBox Margin="101,0,851,0" Height="24" x:Name="txtsolicitud" ></TextBox>
+        <!--sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss-->
+        <Label FontSize="20" Margin="771,-480,251,0" FontFamily="Roboto" Height="34">Nivel de solicitud RADIOGRAFIA:</Label>
+        <ComboBox Margin="1098,-480,158,0" Height="30" x:Name="txtnivelI">
+            <ComboBoxItem IsSelected="True">Nivel 1</ComboBoxItem>
+            <ComboBoxItem>Nivel 2</ComboBoxItem>
+            <ComboBoxItem>Nivel 3</ComboBoxItem>
+            <ComboBoxItem>Nivel 4</ComboBoxItem>
+            <ComboBoxItem>Nivel 5</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="810,-375,422,0" FontSize="20" FontFamily="Roboto" Height="40">Petición:</Label>
+
+        <Label FontFamily="Roboto" FontSize="20" Margin="775,-305,457,0" Height="30">cabeza</Label>
+        <ComboBox Margin="882,-300,350,0" FontSize="20" FontFamily="Roboto" Height="36" x:Name="txtcabeza">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="736,-235,447,0" Height="32">Ext_sup_IZQ</Label>
+        <ComboBox Margin="882,-228,350,0" FontSize="20" FontFamily="Roboto" x:Name="txtBI">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="736,-150,447,0" Height="42">Ext_sup_DER</Label>
+        <ComboBox Margin="882,-156,350,0" FontSize="20" FontFamily="Roboto" x:Name="txtBD" >
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="1034,-300,212,0" Height="32">Tronco</Label>
+        <ComboBox Margin="1112,-295,112,0" FontSize="20" FontFamily="Roboto" x:Name="txtTronco">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label Margin="1008,-230,208,0" FontFamily="Roboto" FontSize="20" Height="34">Ext_Inf_IZQ</Label>
+        <ComboBox Margin="1112,-227,112,0" FontSize="20" FontFamily="Roboto" x:Name="txtPI">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+        <Label FontFamily="Roboto" FontSize="20" Margin="1008,-155,208,0" Height="35">ExtInf_DER</Label>
+        <ComboBox Margin="1112,-158,112,0" FontSize="20" FontFamily="Roboto" x:Name="txtPD">
+            <ComboBoxItem IsSelected="True">No</ComboBoxItem>
+            <ComboBoxItem>Si</ComboBoxItem>
+        </ComboBox>
+
+        <Label FontSize="24" FontFamily="Roboto" Margin="736,-90,487,0" Height="42">Solicitud:</Label>
+        <TextBox Margin="837,-25,146,0" Height="24" x:Name="txtRadiografia"></TextBox>
+
+        <Button Margin="756,90,440,0"  Foreground="White" Click="Guardar" Height="28">
+            Guardar
+        </Button>
+        <Button   Height="52" Margin="1156,-40,50,0" Background="White" Click="Siguiente4">
+            <Image Source="/SistemaUrgencia_v2.0;component/Img/flecha.gif" RenderTransformOrigin="0.5,0.5" Width="88" Height="39">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180.00"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--boton atras-->
+
+        <Button Height="52" Margin="50,-52,1156,0" Background="White" Click="Atras3">
+            <Image Source="/SistemaUrgencia_v2.0;component/Img/flecha.gif" RenderTransformOrigin="0.5,0.5" Width="88" Height="39">
+
+            </Image>
+        </Button>
+        <Button Content="1" Click="b1" Margin="943,-55,342,0"/>
+        <Button Content="2" Click="b2" Margin="988,-55,297,0"/>
+        <Button Content="3" Click="b3" Margin="1033,-55,252,0"/>
+        <Button Content="5" Click="b5" Margin="1078,-55,207,0"/>
+    </StackPanel>
+</Page>
+ 
